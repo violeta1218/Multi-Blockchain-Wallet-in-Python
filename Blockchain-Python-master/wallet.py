@@ -170,14 +170,14 @@ btc_acc = priv_key_to_account(BTCTEST,btc_PrivateKey)
 
 
 # create BTC transaction
-create_tx(BTCTEST,btc_acc,"n3D8vVvLyD7pPQmWoQgMMERZrDjmBheBpU", 0.1)
+create_tx(BTCTEST,btc_acc,"n3x2UyAVX2c9bP4mqd5YNuUZXfP4HrCqDQ", 0.1)
 
 
 # In[34]:
 
 
 # Send BTC transaction
-send_txn(BTCTEST,btc_acc,"mtK73sNPY9CKuzVvpv4W1969AD1UmGGfsX", 0.1)
+send_txn(BTCTEST,btc_acc,"mwgVbyC1Xi2YLcwrmNiNrJZW2M8cKia8WGX", 0.1)
 
 
 # ## ETH Transactions
@@ -186,7 +186,7 @@ send_txn(BTCTEST,btc_acc,"mtK73sNPY9CKuzVvpv4W1969AD1UmGGfsX", 0.1)
 
 
 #connecting to HTTP with address pk
-w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545/0x30c2577db89760baa9ba4058b1033b9e103f287e5de1689e35833ee8e7a7c857"))
+w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545/0x5B2FdCD7E2372138eFD984b3D73eD3544F5A57ef7"))
 
 
 # In[38]:
@@ -201,19 +201,20 @@ w3.isConnected()
 # In[39]:
 
 
-w3.eth.getBalance("0x46BbdBf56ff911A93AdaF0164d0709F78B52765E")
+w3.eth.getBalance("0x35d4EDdf81bf5E4A88eF5199C20e3981f9C5120E")
 
 
 # In[41]:
 
 
-create_tx(ETH,eth_acc,"0x3dA0F09EF6F833b179768a63AdD29061e0702e47", 1000)
+create_tx(ETH,eth_acc,"0xFA627eb9d209B18D0B681B9f04b727B95bA9A394", 1000)
 
 
 # In[42]:
 
 
-send_txn(ETH, eth_acc,"0x3dA0F09EF6F833b179768a63AdD29061e0702e47", 1000)
+send_txn(ETH, eth_acc,"0x762e40B57e7f6E4b83E002B65603D4FD0F8BAC9b
+7", 1000)
 
 
 # ## Confirmation of 
@@ -221,5 +222,5 @@ send_txn(ETH, eth_acc,"0x3dA0F09EF6F833b179768a63AdD29061e0702e47", 1000)
 # In[43]:
 
 
-w3.eth.getBalance("0x3dA0F09EF6F833b179768a63AdD29061e0702e47")
+w3.eth.getBalance("0xFA627eb9d209B18D0B681B9f04b727B95bA9A394")
 
