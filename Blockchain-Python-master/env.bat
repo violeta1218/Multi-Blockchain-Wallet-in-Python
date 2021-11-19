@@ -1,1 +1,1 @@
-MNEMONIC "cannon chronic machine excess hope blanket giraffe cancel behave hello absurd input"
+MNEMONIC "anger bird pretty  vendor split rich rural club hunt similar tragic absent"
